@@ -13,31 +13,28 @@ int photoVoltPin = 4;
 int LEDvoltPin = 2;
 int servoPin = 9;
 float startT = millis();
-Servo myServo; //new  servo objet
+Servo myServo;  //new  servo objet
 
 
 /*~~~~~~~~~~~~~~~~ Methods ~~~~~~~~~~~~~~~~*/
-void pingLED(){
+float pingLED() {
   float lightIntensity = analogRead(inPin);
+  return lightIntensity;
 
-  Serial.print(lightIntensity);
-  Serial.print(',');
-  Serial.print((millis() - startT)/1000.0);
-  Serial.print(',');
-  Serial.println(0);
+  // Serial.println(550);
 }
 
 void getSteps() {
   int val;
 
-  while(Serial.available() > 0) {
+  while (Serial.available() > 0) {
     val = Serial.parseInt();
     if (val != 0) {
       myServo.write(val);
-      Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
-      Serial.print((millis() - startT + 1000)/1000.0); 
-      Serial.print(',');
-      Serial.println(0);
+      delay(5);
+      // Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
+      startT = millis();
+
     }
   }
 }
@@ -51,15 +48,17 @@ void setup() {
   pinMode(photoVoltPin, OUTPUT);
   digitalWrite(photoVoltPin, HIGH);
 
+  Serial.flush();
   // Servo //
   myServo.attach(servoPin);
-  myServo.write(180);
-  delay(5);
-  // myServo.write(180);
-  // delay(5);
 
   // Serial //
-  Serial.begin(115200);
+  Serial.begin(9600);
+  
+
+  myServo.write(180);
+  delay(5);
+
 }
 
 
@@ -68,6 +67,13 @@ void setup() {
 void loop() {
 
   getSteps();
-  pingLED();
-  delay(5);
+  float lightIntensity = pingLED();
+
+  Serial.print(lightIntensity);
+  Serial.print(',');
+  Serial.print((millis() - startT));
+  Serial.print(',');
+  //remove for python
+  Serial.println(0);
+
 }
