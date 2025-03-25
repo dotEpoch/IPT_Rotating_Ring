@@ -11,6 +11,7 @@ import csv
 from datetime import datetime
 import os
 import time
+from waiting import wait
 
 
 # Set up serial communication
@@ -30,13 +31,15 @@ ser.readline()  # Read initial data from Arduino
 
 
 # Prompt user for servo angle
-servo_angle = input("Enter the servo angle (0-180): ")
+#servo_angle = input("Enter the servo angle (0-180): ")
 
-
+#ser.reset_input_buffer()
+#ser.reset_output_buffer()
 # Send the angle to Arduino
 
-ser.write(f"{servo_angle}\n".encode('utf-8'))  # Send the angle to Arduino
-print(f"Sent servo angle: {servo_angle}")
+ser.write("180\n".encode('utf-8'))  # Send the angle to Arduino
+wait(lambda: ser.in_waiting > 0, timeout_seconds=5)
+#print(f"Sent servo angle: {servo_angle}")
 
 
 
@@ -94,6 +97,6 @@ with open(csv_filename, mode='w', newline='') as file:
     except KeyboardInterrupt:
 
         print("\nData collection stopped.")
-
+        ser.write("180\n".encode('utf-8'))  # Send the angle to Arduino
         ser.close()
 

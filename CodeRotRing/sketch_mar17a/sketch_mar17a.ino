@@ -14,6 +14,7 @@ int LEDvoltPin = 2;
 int servoPin = 9;
 float startT = millis();
 Servo myServo;  //new  servo objet
+bool go = false;
 
 
 /*~~~~~~~~~~~~~~~~ Methods ~~~~~~~~~~~~~~~~*/
@@ -27,15 +28,16 @@ float pingLED() {
 void getSteps() {
   int val;
 
-  while (Serial.available() > 0) {
-    val = Serial.parseInt();
+  if (Serial.available() > 0) {
+    val = Serial.read();
     if (val != 0) {
       myServo.write(val);
-      delay(5);
-      // Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
+      //Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
+      //Serial.print(val);
       startT = millis();
-
+      go = true;
     }
+    Serial.flush();
   }
 }
 
@@ -67,13 +69,14 @@ void setup() {
 void loop() {
 
   getSteps();
-  float lightIntensity = pingLED();
 
-  Serial.print(lightIntensity);
-  Serial.print(',');
-  Serial.print((millis() - startT));
-  Serial.print(',');
-  //remove for python
-  Serial.println(0);
+  if (go) {
+    float lightIntensity = pingLED();
+
+    Serial.print(lightIntensity);
+    Serial.print(',');
+    Serial.println((millis() - startT));
+
+  }
 
 }
