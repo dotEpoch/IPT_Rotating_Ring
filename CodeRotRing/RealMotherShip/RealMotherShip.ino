@@ -12,7 +12,7 @@ int inPin = A0;
 int photoVoltPin = 4;
 int LEDvoltPin = 2;
 int servoPin = 9;
-float startT = millis();
+float startT;
 Servo myServo;  //new  servo objet
 bool go = false;
 
@@ -37,7 +37,7 @@ void getSteps() {
       startT = millis();
       go = true;
     }
-    Serial.flush();
+    Serial.read();
   }
 }
 
@@ -50,7 +50,7 @@ void setup() {
   pinMode(photoVoltPin, OUTPUT);
   digitalWrite(photoVoltPin, HIGH);
 
-  Serial.flush();
+  
   // Servo //
   myServo.attach(servoPin);
 
@@ -75,8 +75,9 @@ void loop() {
 
     Serial.print(lightIntensity);
     Serial.print(',');
-    Serial.println((millis() - startT));
-
+    Serial.print((millis() - startT));
+    Serial.print(',');
+    Serial.println('0');
   }
 
 }
