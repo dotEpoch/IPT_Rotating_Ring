@@ -12,7 +12,7 @@ int inPin = A0;
 int photoVoltPin = 4;
 int LEDvoltPin = 2;
 int servoPin = 9;
-float startT;
+uint32_t startT;
 Servo myServo;  //new  servo objet
 bool go = false;
 
@@ -26,19 +26,12 @@ float pingLED() {
 }
 
 void getSteps() {
-  int val;
-
-  if (Serial.available() > 0) {
-    val = Serial.read();
-    if (val != 0) {
-      myServo.write(val);
-      //Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
-      //Serial.print(val);
-      startT = millis();
-      go = true;
-    }
-    Serial.read();
-  }
+  int val = Serial.parseInt();
+  myServo.write(val);
+  //Serial.print("> INITIATE MAGNET DESCENT ! ! ! AT T=");
+  //Serial.print(val);
+  startT = millis();
+  go = true;
 }
 
 /*~~~~~~~~~~~~~~~~ RUN ~~~~~~~~~~~~~~~~*/
@@ -55,7 +48,7 @@ void setup() {
   myServo.attach(servoPin);
 
   // Serial //
-  Serial.begin(9600);
+  Serial.begin(115200);
   
 
   myServo.write(180);
@@ -65,19 +58,23 @@ void setup() {
 
 
 
-
+uint32_t prev_time = startT;
+uint32_t time;
 void loop() {
+time = millis() - startT;
 
-  getSteps();
-
-  if (go) {
-    float lightIntensity = pingLED();
+  if (go && (time > prev_time)) {
+    int lightIntensity = analogRead(inPin);
+    prev_time = time;
 
     Serial.print(lightIntensity);
     Serial.print(',');
-    Serial.print((millis() - startT));
-    Serial.print(',');
-    Serial.println('0');
+    Serial.println(time);
   }
-
+  else if (Serial.available() > 0) {
+    int val = Serial.parseInt();
+    myServo.write(val);
+    startT = millis();
+    go = true;
+  }
 }

@@ -16,7 +16,7 @@ import time
 # Set up serial communication
 
 port = "COM5"  # Change to match your Arduino port (e.g., "/dev/ttyUSB0" for Linux/macOS)
-baudrate = 9600  # Matches your Arduino baud rate
+baudrate = 115200  # Matches your Arduino baud rate
 ser = serial.Serial(port, baudrate, timeout=60)
 ser.reset_input_buffer()
 ser.reset_output_buffer()
@@ -45,7 +45,7 @@ print(f"Sent servo angle: {servo_angle}")
 
 
 # File path for saving data
-csv_filename = os.path.join(os.getcwd(), "AlNiCo_1.3_25.4mm_19.05mm_12.7mm_(5704K14)_S-N_774mm_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
+csv_filename = os.path.join(os.getcwd(), "NeoD_2.0_35.00mm_20.59mm_5.00mm_(5901K75)_N-S_774mm_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
 
 
 # Open the CSV file for writing
@@ -69,7 +69,7 @@ with open(csv_filename, mode='w', newline='') as file:
                 print(f"Received: {data}")  # Debugging print
                 values = data.split(',')
 
-                if len(values) == 3:  # Expecting 2 values (intensity, time)
+                if len(values) == 2:  # Expecting 2 values (intensity, time)
                     try:
                         intensity = float(values[0])  # Light intensity
                         timestamp = float(values[1])  # Time (s)
@@ -93,7 +93,7 @@ with open(csv_filename, mode='w', newline='') as file:
     except KeyboardInterrupt:
 
         print("\nData collection stopped.")
-        #ser.write("180\n".encode('utf-8'))  # Send the angle to Arduino
+        #ser.write("180".encode('utf-8'))  # Send the angle to Arduino
         ser.reset_input_buffer()
         ser.reset_output_buffer()
         ser.close()
