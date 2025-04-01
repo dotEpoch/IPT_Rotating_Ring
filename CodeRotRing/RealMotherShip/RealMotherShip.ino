@@ -70,6 +70,7 @@ time = millis() - startT;
     Serial.print(lightIntensity);
     Serial.print(',');
     Serial.println(time);
+
   }
   else if (Serial.available() > 0) {
     int val = Serial.parseInt();

@@ -13,6 +13,10 @@ import os
 import time
 
 
+
+
+
+
 # Set up serial communication
 
 port = "COM5"  # Change to match your Arduino port (e.g., "/dev/ttyUSB0" for Linux/macOS)
@@ -45,7 +49,7 @@ print(f"Sent servo angle: {servo_angle}")
 
 
 # File path for saving data
-csv_filename = os.path.join(os.getcwd(), "NeoD_2.0_35.00mm_20.59mm_5.00mm_(5901K75)_N-S_774mm_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
+csv_filename = os.path.join(os.getcwd(), "NeoD_2.0_35.00mm_20.59mm_5.00mm_(5901K75)_N-S_400mm_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
 
 
 # Open the CSV file for writing
@@ -66,7 +70,7 @@ with open(csv_filename, mode='w', newline='') as file:
 
             if ser.in_waiting > 0:
                 data = ser.readline().decode('utf-8').strip()
-                print(f"Received: {data}")  # Debugging print
+                #print(f"Received: {data}")  # Debugging print
                 values = data.split(',')
 
                 if len(values) == 2:  # Expecting 2 values (intensity, time)
@@ -79,7 +83,7 @@ with open(csv_filename, mode='w', newline='') as file:
 
                         file.flush()  # Force write to disk
 
-                        print(f"Saved: {timestamp}, {intensity}")  # Debugging print
+                        # print(f"Saved: {timestamp}, {intensity}")  # Debugging print
                     except ValueError:
 
                         print(f"Skipping invalid data: {data}")
