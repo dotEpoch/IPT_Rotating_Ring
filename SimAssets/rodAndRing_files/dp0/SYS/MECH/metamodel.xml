@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaModel>
+  <UnitSystem>DS_SOLV_MKS</UnitSystem>
+  <NumberOfProcessors>1</NumberOfProcessors>
+  <SolverPrecision>1</SolverPrecision>
+  <MpiLibrary>IntelMPI</MpiLibrary>
+  <DistributedSolution>Program Controlled</DistributedSolution>
+  <MemoryAllocatedByUser>0</MemoryAllocatedByUser>
+  <Memory2AllocatedByUser>0</Memory2AllocatedByUser>
+  <BinaryFileSizeFactor>70</BinaryFileSizeFactor>
+  <EndTime>0.1</EndTime>
+  <IsSolverUserDefined>false</IsSolverUserDefined>
+  <AnalysisFlag>0</AnalysisFlag>
+  <CurrentExecutable>
+    <VersionId>14.1</VersionId>
+    <Os>windows</Os>
+    <ProcessingType>SMP</ProcessingType>
+    <Mpi>PCMPI</Mpi>
+    <Precision>single</Precision>
+    <Path>C:\Program Files\ANSYS Inc\ANSYS Student\v251\ansys\bin\winx64</Path>
+    <Name>lsdyna_sp.exe</Name>
+  </CurrentExecutable>
+</MetaModel>

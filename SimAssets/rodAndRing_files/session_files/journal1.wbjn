@@ -1,0 +1,78 @@
+# encoding: utf-8
+# 2025 R1
+SetScriptVersion(Version="25.1.122")
+DesignModeler.SetGeometryEditorToSpaceClaim()
+template1 = GetTemplate(
+    TemplateName="Static Mechanical",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+system1.Delete()
+template2 = GetTemplate(TemplateName="LSDYNA")
+system2 = template2.CreateSystem()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Exit()
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Sample")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.SetSuppression(Suppressed=True)
+material1.SetSuppression(Suppressed=False)
+Save(Overwrite=True)
+favorites1 = EngData.LoadFavoriteItems()
+matl2 = engineeringData1.ImportMaterial(
+    Name="Structural Steel",
+    Source="General_Materials.xml")
+matl3 = engineeringData1.ImportMaterial(
+    Name="Air",
+    Source="Fluid_Materials.xml")
+library1 = EngData.OpenLibrary(
+    Name="Magnetic B-H Curves",
+    Source="Magnetic_B-H_curves_Soft_Materials.xml")
+matl4 = engineeringData1.ImportMaterial(
+    Name="Gray Cast Iron",
+    Source="Magnetic_B-H_curves_Soft_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="Explicit Materials",
+    Source="Explicit_Materials.xml")
+Save(Overwrite=True)
+matl1.Delete()
+matl4.Delete()
+Save(Overwrite=True)
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+modelComponent1.Update(AllDependencies=True)
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+solution1 = system2.GetContainer(ComponentName="Solution")
+solution1.Edit()
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+results1 = system2.GetContainer(ComponentName="Results")
+results1.Edit()
+Save(Overwrite=True)
+Extensions.AddToDefaultExtensions(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Extensions.LoadExtension(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Extensions.RemoveFromDefaultExtensions(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Extensions.UnloadExtension(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Extensions.AddToDefaultExtensions(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Extensions.LoadExtension(Id="f0fd899f-9d88-4f46-8cf1-36bf5c218d65")
+Save(Overwrite=True)
+model1.Exit()
+solution1.Edit()
+model1.Exit()
+Save(Overwrite=True)
