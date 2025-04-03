@@ -51,7 +51,7 @@ void setup() {
   Serial.begin(115200);
   
 
-  myServo.write(180);
+  myServo.write(87);
   delay(5);
 
 }
@@ -61,7 +61,7 @@ void setup() {
 uint32_t prev_time = startT;
 uint32_t time;
 void loop() {
-time = millis() - startT;
+  time = millis() - startT;
 
   if (go && (time > prev_time)) {
     int lightIntensity = analogRead(inPin);
@@ -74,8 +74,11 @@ time = millis() - startT;
   }
   else if (Serial.available() > 0) {
     int val = Serial.parseInt();
-    myServo.write(val);
+    while(Serial.available()) Serial.read();
     startT = millis();
+    myServo.write(val);
+    delay(1);
     go = true;
   }
+
 }

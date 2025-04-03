@@ -49,7 +49,7 @@ print(f"Sent servo angle: {servo_angle}")
 
 
 # File path for saving data
-csv_filename = os.path.join(os.getcwd(), "NeoD_2.0_35.00mm_20.59mm_5.00mm_(5901K75)_N-S_400mm_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
+csv_filename = os.path.join(os.getcwd(), "AlNiCo_3.0_38.10mm_28.575.00mm_19.05mm_(5704K16)_S-N_400mm_mediumAngle_{0}.csv".format(date_format)) # Material_MaxPull_OD_HD_Thck_(57...)_Orientation (N-S)_RodLength_TIMEDATE.csv
 
 
 # Open the CSV file for writing
@@ -62,7 +62,9 @@ with open(csv_filename, mode='w', newline='') as file:
     print(f"Saving data to: {csv_filename}")
     print("Starting data collection... Press Ctrl+C to stop.")
 
-
+    min_intensity = 1000;
+    intensity = []
+    timestamp = []
 
     try:
 
@@ -75,13 +77,10 @@ with open(csv_filename, mode='w', newline='') as file:
 
                 if len(values) == 2:  # Expecting 2 values (intensity, time)
                     try:
-                        intensity = float(values[0])  # Light intensity
-                        timestamp = float(values[1])  # Time (s)
+                        intensity.append(int(values[0])) # Light intensity
+                        timestamp.append(int(values[1]))  # Time (s)
+                        if int(values[0]) < min_intensity: min_intensity = int(values[0])
 
-
-                        writer.writerow([timestamp, intensity])  # Save data
-
-                        file.flush()  # Force write to disk
 
                         # print(f"Saved: {timestamp}, {intensity}")  # Debugging print
                     except ValueError:
@@ -93,12 +92,27 @@ with open(csv_filename, mode='w', newline='') as file:
                     print(f"Skipping malformed line: {data}")
 
 
-
+        
     except KeyboardInterrupt:
+        print(f"\nData collection stopped. Minimum Value: {min_intensity}. Starting File creation")
+        ping = list(zip(timestamp, intensity))
+        for t, i in ping:
+            writer.writerow([t, i])  # Save data
 
-        print("\nData collection stopped.")
-        #ser.write("180".encode('utf-8'))  # Send the angle to Arduino
+            file.flush()  # Force write to disk
+        # data_end = ser.read(ser.inWaiting()).decode('utf-8').strip()
+        # values = data_end.split('\n')
+        # for value in values:
+                
+        #     intensity = float(value[0])  # Light intensity
+        #     timestamp = float(value[1])  # Time (s)
+    
+        #     writer.writerow([timestamp, intensity])  # Save data
+        #     file.flush()  # Force write to disk
+    
+        print("\nFile Created fire")
         ser.reset_input_buffer()
         ser.reset_output_buffer()
         ser.close()
+        file.close()
 
