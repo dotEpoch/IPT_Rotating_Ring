@@ -1,0 +1,24 @@
+FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Time:13:53:53 4/2/25  Microsoft Windows [Version 10.0.26100.3476]
+Format:
+ +   wall | charged | 
+ +  clock |   CPU   | ...progress data...).
+
+START C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\test1.pde  13:53:53 4/2/25
+ +    0:03|     0:05| Mesh Generation Complete 
+ +    0:03|     0:05| Mesh dump written to C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\test1_output\test1_initialmesh.xfr 
+ +    0:03|     0:05|  4 Threads  Cubic (3)   
+ +    0:03|     0:05| (1)Linear Step 1 Error= 5.392149 Orthomin/ILU(39)
+ +    0:03|     0:05| (1)Linear Step 2 Error= 5.338e-6 Orthomin/ILU(49)
+ +    0:03|     0:05| (1)Linear Step 3 Error= 2.28e-13 Orthomin/ILU(46)
+ +    0:03|     0:05| GRID 1 Nodes=270 Cells=1083 DOF=5572 RMS ERR= 0.001497 MAX ERR= 0.002927 MEM(KiB)=10705
+ +    0:03|     0:06| (1)Linear Step 1 Error= 0.052905 Orthomin/ILU(40)
+ +    0:03|     0:06| (1)Linear Step 2 Error= 1.561e-8 Orthomin/ILU(42)
+ +    0:03|     0:06| GRID 2 Nodes=299 Cells=1209 DOF=6190 RMS ERR= 0.001036 MAX ERR= 0.001948 MEM(KiB)=11625
+ +    0:03|     0:06| (1)Linear Step 1 Error= 0.026578 Orthomin/ILU(40)
+ +    0:03|     0:06| (1)Linear Step 2 Error= 2.169e-9 Orthomin/ILU(45)
+ +    0:03|     0:06| GRID 3 Nodes=304 Cells=1227 DOF=6289 RMS ERR= 0.001091 MAX ERR= 0.002023 MEM(KiB)=11757
+ +    0:06|     0:09| --DONE-- 13:54:00 4/2/25
+
+ Problem Time:13:54:01 4/2/25  Elapsed Time:00:00:08
+
+ Stop Time:14:37:49 4/5/25  Elapsed Time:72:43:56

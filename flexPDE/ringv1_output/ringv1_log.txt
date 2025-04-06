@@ -1,0 +1,21 @@
+FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Time:16:24:36 4/5/25  Microsoft Windows [Version 10.0.26100.3476]
+Format:
+ +   wall | charged | 
+ +  clock |   CPU   | ...progress data...).
+
+START C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde  16:24:37 4/5/25
+ +    0:01|     0:01| Mesh Import Failed 
+ +    0:01|     0:01| Mesh Generation Complete 
+ +    0:01|     0:01| Mesh dump written to C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr 
+ +    0:01|     0:01|  4 Threads  Cubic (3)   
+ +    0:01|     0:01| (1)Linear Step 1 Error= 7.273489 Orthomin/ILU(20)
+ +    0:01|     0:01| (1)Linear Step 2 Error= 2.008e-8 Orthomin/ILU(22)
+ +    0:01|     0:01| GRID 1 Nodes=146 Cells=252 DOF=1192 RMS ERR= 0.004448 MAX ERR= 0.008629 MEM(KiB)=10026
+ +    0:01|     0:01| (1)Linear Step 1 Error= 0.309901 Orthomin/ILU(24)
+ +    0:01|     0:01| (1)Linear Step 2 Error= 5.63e-10 Orthomin/ILU(22)
+ +    0:01|     0:01| GRID 2 Nodes=157 Cells=274 DOF=1291 RMS ERR= 0.001753 MAX ERR= 0.003125 MEM(KiB)=10099
+ +    0:02|     0:02| --DONE-- 16:24:39 4/5/25
+
+ Problem Time:16:24:39 4/5/25  Elapsed Time:00:00:03
+
+ Stop Time:12:13:22 4/6/25  Elapsed Time:19:48:46

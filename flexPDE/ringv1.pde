@@ -3,9 +3,6 @@
 Title 'Rotating Ring Magnet'  
 
 
-Coordinates 
-	CARTESIAN3
-   
 
 Variables  
 
@@ -101,7 +98,7 @@ Monitors
 
 Plots  
 
-   grid(x,y,z)  
+   grid(x,y)  
 
    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
 

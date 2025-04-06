@@ -1,0 +1,2212 @@
+START THREAD 1 ringv1 
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 13:52:56 4/2/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| Coordinates 
+    7| 	CARTESIAN3
+    8|    
+    9| 
+   10| Variables  
+   11| 
+   12|     A { z-component of Vector Magnetic Potential }  
+   13| 
+   14| 
+   15| Definitions  
+   16| 
+   17|     mu = 1
+   18| 
+   19|     S = 0             { current density }  
+   20| 
+   21|     Px = 0             { Magnetization components }  
+   22| 
+   23|     Py = 0  
+   24| 
+   25|     P = vector(Px,Py) { Magnetization vector }  
+   26| 
+   27|     H = (curl(A)-P)/mu { Magnetic field }    
+   28| 
+   29|     y0 = 8             { Size parameter }  
+Parse_Error at Line 27 Cols 10-13
+ in file C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde
+Vector Argument Required
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+Parse_Error Catches RTException stop_parse(100,000002A93DD96E00,000002A93F49DB40)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+PDEThread Catches RTException stop_parse(100,000002A93DD96E00,000002A93F49DB40)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:37:43 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| Coordinates 
+    7| 	CARTESIAN3
+    8|    
+    9| 
+   10| Variables  
+   11| 
+   12|     A { z-component of Vector Magnetic Potential }  
+   13| 
+   14| 
+   15| Definitions  
+   16| 
+   17|     mu = 1
+   18| 
+   19|     S = 0             { current density }  
+   20| 
+   21|     Px = 0             { Magnetization components }  
+   22| 
+   23|     Py = 0  
+   24| 
+   25|     P = vector(Px,Py) { Magnetization vector }  
+   26| 
+   27|     H = (curl(A)-P)/mu { Magnetic field }    
+   28| 
+   29|     y0 = 8             { Size parameter }  
+Parse_Error at Line 27 Cols 10-13
+ in file C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde
+Vector Argument Required
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+Parse_Error Catches RTException stop_parse(100,000002A94D88DC10,000002A953CCE290)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+PDEThread Catches RTException stop_parse(100,000002A94D88DC10,000002A953CCE290)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:38:11 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| Coordinates 
+    7| 	CARTESIAN3
+    8|    
+    9| 
+   10| Variables  
+   11| 
+   12|     A { z-component of Vector Magnetic Potential }  
+   13| 
+   14| 
+   15| Definitions  
+   16| 
+   17|     mu = 1
+   18| 
+   19|     S = 0             { current density }  
+   20| 
+   21|     Px = 0             { Magnetization components }  
+   22| 
+   23|     Py = 0  
+   24| 
+   25|     P = vector(Px,Py) { Magnetization vector }  
+   26| 
+   27|     H = (curl(A)-P)/mu { Magnetic field }    
+   28| 
+   29|     y0 = 8             { Size parameter }  
+Parse_Error at Line 27 Cols 10-13
+ in file C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde
+Vector Argument Required
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+Parse_Error Catches RTException stop_parse(100,000002A945D50DC0,000002A953CCDDE0)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+PDEThread Catches RTException stop_parse(100,000002A945D50DC0,000002A953CCDDE0)
+errmsg: Vector Argument Required
+Traceback:
+(  3)Called from Simplifier::simplifier
+-----Called from Simplifier::simplify
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:39:31 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y,z)  
+Parse_Error at Line 101 Cols 13-13
+ in file C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde
+Undefined Name: Z
+
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+Parse_Error Catches RTException stop_parse(100,000002A948DEEF00,000002A94B6F20F0)
+errmsg: Undefined Name: Z
+
+Traceback:
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+PDEThread Catches RTException stop_parse(100,000002A948DEEF00,000002A94B6F20F0)
+errmsg: Undefined Name: Z
+
+Traceback:
+-----Called from Control::parse_file
+-----Called from Control::do_parse
+-----Called from PDEThread::state_machine
+-----Called from PDEThread::run
+-----Called from PageStack::GUIcreatejob
+-----Called from PageStack::OnDropFiles
+-----Called from MainWindow::openrecent
+-----Called from FlexPDE::OnRun
+
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:39:39 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr) 
+Trap=0 NDIM=2 NB=10 NAB=3 NODES=146 CELLS=252 SIDES=397 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+ABORT IMPORT, CHECK_AUTOMESH_HEADER FAILED
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:40:01 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr) 
+Trap=0 NDIM=2 NB=10 NAB=3 NODES=146 CELLS=252 SIDES=397 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+ABORT IMPORT, CHECK_AUTOMESH_HEADER FAILED
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:40:05 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr) 
+Trap=0 NDIM=2 NB=10 NAB=3 NODES=146 CELLS=252 SIDES=397 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+ABORT IMPORT, CHECK_AUTOMESH_HEADER FAILED
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:40:13 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+NO AUTOREAD
+PDEThread Catches RTException stop_quit(255,0000000000000000,0000000000000000)
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:40:19 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+NO AUTOREAD
+PDEThread Catches RTException stop_quit(255,0000000000000000,0000000000000000)
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:40:31 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+NO AUTOREAD
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 14:51:57 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr) 
+Trap=0 NDIM=2 NB=10 NAB=3 NODES=146 CELLS=252 SIDES=397 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+ABORT IMPORT, CHECK_AUTOMESH_HEADER FAILED
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+
+================================================================
+===  FlexPDE Version 8.01/W64  12:40:29 Mar  4 2025  Copyright © 1996-2023 PDE Solutions Inc.
+===  C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1.pde 16:24:37 4/5/25
+================================================================
+    1| 
+    2| 
+    3| Title 'Rotating Ring Magnet'  
+    4| 
+    5| 
+    6| 
+    7| Variables  
+    8| 
+    9|     A { z-component of Vector Magnetic Potential }  
+   10| 
+   11| 
+   12| Definitions  
+   13| 
+   14|     mu = 1
+   15| 
+   16|     S = 0             { current density }  
+   17| 
+   18|     Px = 0             { Magnetization components }  
+   19| 
+   20|     Py = 0  
+   21| 
+   22|     P = vector(Px,Py) { Magnetization vector }  
+   23| 
+   24|     H = (curl(A)-P)/mu { Magnetic field }    
+   25| 
+   26|     y0 = 8             { Size parameter }  
+   27|     
+   28|     ! Geometric Constants
+   29|     roomRadius = 40
+   30|     roomHeight = 100
+   31|     
+   32|     rodRadius = 5
+   33|     rodHeight = 80
+   34|     
+   35|     ringInnerR = 15
+   36|     ringOuterR = 20
+   37|     ringHeight = 5
+   38|     
+   39|     phimax = 360 degrees
+   40| 
+   41| 
+   42| Materials
+   43| 
+   44| 'Magnet' : Py = 10
+   45| 
+   46| 'Other'  : mu = 5000
+   47| 
+   48|  
+   49| Initial values  
+   50| 
+   51|      A = 0
+   52| 
+   53|    
+   54| Equations     
+   55| 
+   56|      A : curl(H) + S = 0  
+   57|      
+   58|    
+   59| 
+   60| BOUNDARIES
+   61| 
+   62|    Region 1   ! Outer region, e.g., vacuum or air
+   63| 
+   64|      start(-40,0)
+   65| 
+   66|      natural(A) = 0 line to (60,0)  ! Natural boundary condition along the x-axis
+   67| 
+   68|      value(A) = 0 line to (60,100) to (-40,100) to close  ! Zero value boundary along the y-axis
+   69| 
+   70|    
+   71| 
+   72|    Region 2   ! Another material region (e.g., non-magnetic material)
+   73| 
+   74|      use material 'Other'
+   75| 
+   76|      start(0,0)
+   77| 
+   78|      line to (15,0) to (15,100) to (0,100) to close  ! Defining a polygonal boundary
+   79| 
+   80|    
+   81| 
+   82|    Region 3   ! Permanent magnet region
+   83| 
+   84|      use material 'Magnet'
+   85| 
+   86|      start(20,50)
+   87| 
+   88|      line to (30,50) to (30,60) to (20,60) to close  ! Defining the boundary of the magnet's shape
+   89| 
+   90| 
+   91| 
+   92| Monitors  
+   93| 
+   94|    contour(A)
+   95| 
+   96| 
+   97|    
+   98| 
+   99| Plots  
+  100| 
+  101|    grid(x,y)  
+  102| 
+  103|    vector(dy(A),-dx(A)) as 'FLUX DENSITY B'  
+  104| 
+  105|    vector((dy(A)-Px)/mu, (-dx(A)-Py)/mu) as 'MAGNETIC FIELD H'  
+  106| 
+  107|    contour(A) as 'Az MAGNETIC POTENTIAL'  
+  108| 
+  109|    surface(A) as 'Az MAGNETIC POTENTIAL'  
+  110| 
+  111|    
+  112| 
+  113| End  
+  114| 
+  115|   
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(C:\Users\vince\zZ.Lab\IPT_Rotating_Ring\flexPDE\ringv1_output\ringv1_initialmesh.xfr) 
+Trap=0 NDIM=2 NB=10 NAB=3 NODES=146 CELLS=252 SIDES=397 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+ABORT IMPORT, CHECK_AUTOMESH_HEADER FAILED
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param        name     Type       Domain               Definition
+-------------------------------------------------------------------------------
+    1          MU       Scalar  (GLOBAL)               :  1
+                                                       =>  1
+                              (REGION   2)           :  5000
+    2           S       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    3          PX       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+    4          PY       Scalar  (GLOBAL)               :  0
+                                                       =>  0
+                              (REGION   3)           :  10
+    5           P       Vector  (GLOBAL)               : vector(PX,PY, 0)
+                                                       => vector(0,0,0)
+    6           H       Vector  (GLOBAL)               : ((vector(DY(A),-(DX(A)), 0))-P)/MU
+                                                       => vector(A.Y,-(A.X), 0)
+    7          Y0       Scalar  (GLOBAL)               :  8
+                                                       =>  8
+    8  ROOMRADIUS       Scalar  (GLOBAL)               :  40
+                                                       =>  40
+    9  ROOMHEIGHT       Scalar  (GLOBAL)               :  100
+                                                       =>  100
+   10   RODRADIUS       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   11   RODHEIGHT       Scalar  (GLOBAL)               :  80
+                                                       =>  80
+   12  RINGINNERR       Scalar  (GLOBAL)               :  15
+                                                       =>  15
+   13  RINGOUTERR       Scalar  (GLOBAL)               :  20
+                                                       =>  20
+   14  RINGHEIGHT       Scalar  (GLOBAL)               :  5
+                                                       =>  5
+   15      PHIMAX       Scalar  (GLOBAL)               :  360
+                                                       =>  360
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. 
+<Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. 
+<Vbu> is weighted by both.
+A dotted volume integral (eg, <Vb.x>) represents volume integration weighted by the indicated
+derivative of the basis function.
+'tri3', 'tet20', etc., represents a basis function in the indicated basis.
+The operator <S.c> represents surface integration weighted by the indicated
+direction cosine.
+
+--------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+--------------------
+        DEFINES REGION/  DEPENDS                       BASE        CSE
+EQUATION    VAR  BLOCK    ON VAR        FUNCTION  COMPLEXITY COMPLEXITY    MEMORY           DEFINITION
+--------------------------------------------------------------------------------------------------------------
+     1        A                 Generic Equation                                  : ((CURL(H))+S)- 0
+                                    LHS Equation          6          6        384 : -((DX(A.X))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         10          5        320 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          6          6        384 : -((<S.Y>(A.Y))+(<S.X>(A.X)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+                                    LHS Equation         10         10        640 : -((DX(A.X* 2.00e-4))+(DY(A.Y* 2.00e-4)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         16          9        576 : (<Vb.Y>(A.Y* 2.00e-4))+(<Vb.X>(A.X* 2.00e-4))
+                              A   Space Jacobian         16          9        576 : (<Vb.Y>(tri10.Y* 2.00e-4))+(<Vb.X>(tri10.X* 2.00e-4))
+                                Surface Galerkin         10         10        640 : -((<S.Y>(A.Y* 2.00e-4))+(<S.X>(A.X* 2.00e-4)))
+                              A Surface Jacobian         10         10        640 : -((<S.Y>(tri10.Y* 2.00e-4))+(<S.X>(tri10.X* 2.00e-4)))
+                                    LHS Equation          8          8        512 : -((DX(A.X+ 10))+(DY(A.Y)))
+                                          Source          1          2        128 : <Vb>( 0)
+                                  Space Galerkin         12          7        448 : (<Vb.Y>(A.Y))+(<Vb.X>(A.X+ 10))
+                              A   Space Jacobian         10          5        320 : (<Vb.Y>(tri10.Y))+(<Vb.X>(tri10.X))
+                                Surface Galerkin          8          8        512 : -((<S.Y>(A.Y))+(<S.X>(A.X+ 10)))
+                              A Surface Jacobian          6          6        384 : -((<S.Y>(tri10.Y))+(<S.X>(tri10.X)))
+
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+           MU            S           PX           PY            P            H
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC SET   1: BC(  A)= nat(1)
+            
+BC SET   2: BC(  A)= val(2)
+            
+
+    BC  KIND   DEFINES REGION  DEPENDS     FUNCTION  COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   NAT        A       1         Surf Galerkin          1         64 :  0
+         NAT        A       2         Surf Galerkin          1         64 :  0
+     2   VAL        A       1         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+         VAL        A       2         Surf Galerkin          1         64 : A
+                                  A   Surf Jacobian          1         64 : tri10
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           64 : A
+     2       GRID2          0          1          1           64 : X
+                            0          1          1           64 : Y
+     3      VECTOR          0          4          4          256 : vector(A.Y,-(A.X))
+     4      VECTOR          1          4          4          256 : vector(A.Y,-(A.X))
+                            2          8          8          512 : vector(A.Y* 2.00e-4,-(A.X* 2.00e-4))
+                            3          6          6          384 : vector(A.Y,-(A.X+ 10))
+     5     CONTOUR          0          1          1           64 : A
+     6     SURFACE          0          1          1           64 : A
+
+
+=== 0 STORED COMMON SUBEXPRESSIONS === 
+
+
+==UNUSED== PARAMETER DEFINITIONS:
+         Y0 ROOMRADIUS ROOMHEIGHT  RODRADIUS  RODHEIGHT RINGINNERR RINGOUTERR RINGHEIGHT     PHIMAX
+LOG Threads=4 Order=3 Speed=1 Stability=0
+CG it=20 itlimit=2034 Flag=Ok Xnorm=7.27349
+Linear Step 1 Error= 7.273489::2e-06 Orthomin/ILU
+CG it=22 itlimit=2034 Flag=Ok Xnorm=2.00849e-08
+Linear Step 2 Error= 2.008e-8::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.017214
+CG it=24 itlimit=2035 Flag=Ok Xnorm=0.309901
+Linear Step 1 Error= 0.309901::2e-06 Orthomin/ILU
+CG it=22 itlimit=2035 Flag=Ok Xnorm=5.62681e-10
+Linear Step 2 Error= 5.63e-10::2e-06 Orthomin/ILU
+RMS Spatial Errors   0.009817
+END ringv1 12:13:22 4/6/25
